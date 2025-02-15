@@ -8,9 +8,14 @@ import HomePage from "./pages/Homepage";
 import Posts from "./pages/Posts";
 import PostDetail from "./pages/PostDetail";
 import AboutUs from "./pages/AboutUs";
+import Alert from "./components/Alert";
+import { AlertProvider } from "./context/AlertContext";
 
 export default function App() {
   return (
+    <>
+    <AlertProvider >
+    <Alert />
     <BrowserRouter>
       <Routes>
         <Route element={<DefaultLayout />}>
@@ -21,5 +26,7 @@ export default function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    </AlertProvider >
+    </>
   );
 }

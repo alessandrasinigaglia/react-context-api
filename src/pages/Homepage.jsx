@@ -19,7 +19,7 @@ export default function HomePage() {
     <h2>Ultimi Articoli</h2>
     <div class="grid">
       <div class="post-card">
-        <img src="public/img/pizza-margherita-500x500.jpg" alt="Pizza"/>
+        <img src="/img/pizza-margherita-500x500.jpg" alt="Pizza"/>
         <div class="post-content">
           <h3>La pizza perfetta fatta in casa</h3>
           <p>Scopri i segreti per una pizza croccante e gustosa.</p>
@@ -27,7 +27,7 @@ export default function HomePage() {
         </div>
       </div>
       <div class="post-card">
-        <img src="public/img/pasta cremosa speck.webp" alt="Pasta"/>
+        <img src="/img/pasta cremosa speck.webp" alt="Pasta"/>
         <div class="post-content">
           <h3>Ricetta di una pasta cremosa irresistibile</h3>
           <p>Una pasta deliziosa pronta in pochi minuti.</p>
@@ -35,7 +35,7 @@ export default function HomePage() {
         </div>
       </div>
       <div class="post-card">
-        <img src="public/img/dolce-al-cucchiaio-al-cioccolato-perugina.jpg" alt="Torta"/>
+        <img src="/img/dolce-al-cucchiaio-al-cioccolato-perugina.jpg" alt="Torta"/>
         <div class="post-content">
           <h3>Come preparare un dessert super goloso e veloce</h3>
           <p>Dolce perfetto per ogni occasione.</p>

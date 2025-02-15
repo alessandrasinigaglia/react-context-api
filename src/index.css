@@ -298,3 +298,10 @@ form button:hover {
 .social i {
     font-size: 34px;
 }
+
+/* ALERT */
+.alert {
+    text-align: center;
+    padding: 15px;
+    background-color: #c570ad;
+}

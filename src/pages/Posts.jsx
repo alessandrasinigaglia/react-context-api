@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { useAlert } from "../context/AlertContext";
 
 export default function Posts() {
   const [shoppingList, setShoppingList] = useState([]);
@@ -8,6 +9,8 @@ export default function Posts() {
   const [content, setContent] = useState("");
   const [image, setImage] = useState("");
   const [category, setCategory] = useState("Antipasto");
+
+  const { showAlert } = useAlert();
 
   useEffect(() => {
     axios.get("http://localhost:3000/posts").then((response) => {
@@ -32,6 +35,7 @@ export default function Posts() {
         setContent("");
         setImage("");
         setCategory("Antipasto");
+        showAlert("Post creato!")
       });
   };
 
